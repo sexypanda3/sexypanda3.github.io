@@ -3,16 +3,16 @@ body {
     linear-gradient(160deg, #f5898b, #ed335f,#761137);
     /* Adding Linear Gradient */
 }
-.bodypics {
-    background-color: rgba(0,255,255,.4)
-}
 
 div {
     font-family: "Playfair Display"
 }
 
-h1 {
-    color: "#2f2b30"
+.h1 {
+    color: #2f2b30
+}
+.h1 [color = "pics"]{
+  color:#3a3b3c
 }
 
 img {
@@ -25,6 +25,16 @@ img {
   img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
+
+.imgorg{
+    border: 0cm;
+}
+
+.imgpics {
+    width: 300px;
+    height: 300px;
+}
+
   p {
     color: #030;
     padding: 10px;
