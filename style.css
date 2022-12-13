@@ -1,6 +1,6 @@
 body {
     background-image:
-    linear-gradient(160deg, #f5898b, #ed335f,#761137);
+    linear-gradient(160deg, #f5898b, #eb0f43,#ee80aa);
     /* Adding Linear Gradient */
 }
 
@@ -31,12 +31,23 @@ img {
 }
 
 .imgpics {
-    width: 300px;
-    height: 300px;
+       max-width: 200px;
+        max-height: 200px;
+       }
+table {width: 90%;}
+
+@media screen and (min-width: 800px) {
+  .imgpics {
+     max-width: 500px;
+     max-height: 300px; 
+    }
+ table {
+   width: 800px;
+   }
 }
 
-  p {
-    color: #030;
+  #p {
+    color: #ee80aa;
     padding: 10px;
     font-family: sans-serif;
     font-size: 12pt;
@@ -54,4 +65,22 @@ img {
     font-weight: 500;
    /* 500 is Medium */
   }
+
+  .item1 { grid-area: slab1; }
+  .item2 { grid-area: slab2; }
+  .item3 { grid-area: slab3; }
+  .item3 { grid-area: slab4; }
+  
+  .grid-container {
+      display: grid;
+      grid:
+      'slab1 slab2 slab3 slab4'
+      'slab1 slab2 slab3 slab4'
+      'slab1 slab2 slab3 slab4';
+      grid-gap: 10px;
+      background-color: #70061f;
+      padding: 10px;
+      font-family: sans-serif;  
+    }
+  
 
