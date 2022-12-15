@@ -57,7 +57,31 @@
                             </i>
                         </p>
                     </td></tr>
-                <div>
+                </div>
+                    <div>
+            <p> Do you like dogs? If yes then fill out the form below: </p>  
+            <p>Name:</p> <input type="text" > <br>
+            <p>Do you own a dog?</p> <input type="text"> <br>
+            <p>Your favorite dog breed?</p><form>
+               <input list="DogBreed">
+               <datalist id="DogBreed">
+                 <option value="Labrador">
+                 <option value="Pug">
+                 <option value="Bulldog">
+                 <option value="Pitbull">
+                 <option value="Other">
+               </datalist>
+             </form>
+           <p> What do you like most about dogs?</p>
+           <input type = "text" id ="userInput">
+          <p> Do you also like Cats?</p><br>
+           <input type="checkbox" name="yes">
+           <label for="yes"> Yes</label> &nbsp;&nbsp;&nbsp;
+           <input type="checkbox"name="no">
+           <label for="no">No</label><br>
+           <p> To submit the form, press submit!</p>
+           </div>
+           <button type="submit" id = "but" value="Submit"></button>
             </tbody>
         </table>
     </body>
